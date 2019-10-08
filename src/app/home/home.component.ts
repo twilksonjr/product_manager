@@ -1,23 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 
-import { HttpService } from './http.service';
+import { HttpService } from '../http.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class AppComponent {
-  title = 'public';
-
+export class HomeComponent implements OnInit {
   constructor(
     private _httpService: HttpService,
     private _route: ActivatedRoute,
     private _router: Router
   ) {}
 
-  ngOnInit() {
-    console.log('something');
-  }
+  ngOnInit() {}
 }

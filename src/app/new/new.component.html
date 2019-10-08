@@ -1,0 +1,10 @@
+<h1>Create New Product</h1>
+<form (submit)="createProduct()" method="post">
+    <label>Title</label>
+    <input type="text" name="product.title" [(ngModel)]="product.title">
+    <label>Price</label>
+    <input type="number" step="0.01" name="product.price" [(ngModel)]="product.price">
+    <label>Image url</label>
+    <input type="text" name="product.imageUrl" [(ngModel)]="product.imageUrl">
+    <input type="submit" value="Create">
+</form>
